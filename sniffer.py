@@ -28,3 +28,8 @@ def process_packet(packet):
 
         if alert:
             print(alert)
+
+        save_packet(data, alert)   # 🔥 THIS IS THE FIX
+
+def start_sniffing():
+    sniff(prn=process_packet, store=False)
