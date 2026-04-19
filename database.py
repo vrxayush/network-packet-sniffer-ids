@@ -15,3 +15,18 @@ def save_packet(data, alert=None):
 
     conn.commit()
     conn.close()
+
+def init_db():
+    conn = get_connection()
+    cursor = conn.cursor()
+
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS packets (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        src TEXT,
+        dst TEXT,
+        protocol TEXT,
+        port INTEGER,
+        alert TEXT
+    )
+    """)
