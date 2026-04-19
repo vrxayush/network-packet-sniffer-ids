@@ -33,3 +33,13 @@ def init_db():
 
     conn.commit()
     conn.close()
+
+def get_packets():
+    conn = get_connection()
+    cursor = conn.cursor()
+
+    cursor.execute("SELECT * FROM packets ORDER BY id DESC LIMIT 50")
+    data = cursor.fetchall()
+
+    conn.close()
+    return data
