@@ -18,3 +18,12 @@ def packets():
 
 def run_sniffer():
     start_sniffing()
+
+if __name__ == "__main__":
+    init_db()  # create table
+
+    thread = threading.Thread(target=run_sniffer)
+    thread.daemon = True
+    thread.start()
+
+    app.run(debug=False)
