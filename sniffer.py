@@ -11,3 +11,14 @@ def process_packet(packet):
         if TCP in packet:
             protocol = "TCP"
             port = packet[TCP].dport
+
+        elif UDP in packet:
+            protocol = "UDP"
+            port = packet[UDP].dport
+
+        data = {
+            "src": ip_layer.src,
+            "dst": ip_layer.dst,
+            "protocol": protocol,
+            "port": port
+        }
