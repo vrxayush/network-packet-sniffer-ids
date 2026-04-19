@@ -22,3 +22,9 @@ def process_packet(packet):
             "protocol": protocol,
             "port": port
         }
+
+        alert = detect_port_scan(data)
+        print(f"[+] Packet: {data['src']} → {data['dst']} ({data['protocol']})")
+
+        if alert:
+            print(alert)
