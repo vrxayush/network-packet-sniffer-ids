@@ -109,20 +109,20 @@ http://127.0.0.1:5000
 ---
 ## 📈 Future Improvements
 
-> 🌍 IP Geolocation mapping
-> 📊 Traffic visualization charts
-> 🚨 Multiple attack detection (DoS, brute force)
-> 🔐 Authentication system
-> 🐳 Docker deployment
+- 🌍 IP Geolocation mapping
+- 📊 Traffic visualization charts
+- 🚨 Multiple attack detection (DoS, brute force)
+- 🔐 Authentication system
+- 🐳 Docker deployment
 
 ## 🎯 Use Case
 
 This project demonstrates:
 
-> Network Monitoring
-> Packet Analysis
-> Intrusion Detection Systems (IDS)
-> Cybersecurity fundamentals
+- Network Monitoring
+- Packet Analysis
+- Intrusion Detection Systems (IDS)
+- Cybersecurity fundamentals
 ---
 ## 👨‍💻 Author
 
