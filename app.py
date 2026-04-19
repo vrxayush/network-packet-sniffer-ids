@@ -15,3 +15,6 @@ def packets():
     data = get_packets()
     return jsonify(data)
 
+
+def run_sniffer():
+    start_sniffing()
