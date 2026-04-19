@@ -30,3 +30,6 @@ def init_db():
         alert TEXT
     )
     """)
+
+    conn.commit()
+    conn.close()
